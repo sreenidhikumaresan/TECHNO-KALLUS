@@ -1,0 +1,645 @@
+*{
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    
+}
+
+body{
+    background-color: blanchedalmond;
+
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    position: sticky;
+    top:0;
+    left:0;
+    z-index: 1000;
+    background-color: blanchedalmond;
+}
+#navbar{
+    display:flex;
+    justify-content:flex-end;
+    align-items: center;
+    flex-grow: 1;
+}
+#navbar a{
+    margin: 0 10px;
+}
+#navbar img{
+    display: block;
+    height: 80px !important;
+    width: 100px !important;
+}
+#navbar img:hover{
+    transform: scale(1.2) !important;
+}
+#header img{
+    height: 80px;
+    width: 100px;
+    border-radius: 50%;
+    border: solid 1px black;
+    box-shadow: #e0a00a 2px 1px;
+}
+#about{
+    max-width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction:row;
+    padding:70px 5% 70px ;
+    background: url(bgimage2.png);
+    color: white;
+    margin-bottom: 5%;
+
+}
+#about h1{
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 0.7s;
+    font-size: 40px;
+}
+.about-content{
+    max-width: 600px;
+    margin-left: 40px;
+    font-size: large;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 0.7s;
+}
+.about-content p{
+    padding: 10px;
+    font-size: 20px;
+}
+.about-content h4{
+    padding: 10px;
+}
+@keyframes slideBottom{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+}
+
+#Products{
+    padding: 70px 5% 70px;
+    height: 80vh;
+    margin-bottom: 5%;
+
+
+}
+#Products h1{
+    text-align: center;
+    font-size: 40px;
+    margin: 30px;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 0.7s;
+
+}
+#product{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(359px,auto));
+
+}
+.biscuit:hover{
+    transform: translateY(-10px) !important;
+}
+.biscuit{
+    padding: 20px;
+    height: 200px;
+    margin: 10px;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 0.7s;
+    border: solid 2px black ;
+    border-radius: 5px;
+    transition: transform 0.5s ease;
+
+}
+.biscuit h3{
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 0.7s;
+}
+#p1{
+    background: url(chocochip\ cookie.png);
+    background-size:cover;
+
+}
+#p2{
+    background: url(coconut\ bisq.png);    
+    background-size:cover;
+
+}
+
+#p3{
+    background: url(cafe\ bisq.jpeg);
+    background-size:cover;
+
+}
+#p4{
+    background: url(bisqfills.jpeg);
+    background-size:cover;
+
+}
+#p5{
+    background: url(ginger\ bisq.jpeg);
+    background-size:cover;
+
+}
+#p6{
+    background: url(marie\ bisq.jpeg);
+    background-size:cover;
+
+}
+#Recipe{
+    padding: 70px 5% 70px;
+    height: 80vh;
+    margin-bottom: 5%;
+
+}
+#Recipe h1{
+    text-align: center;
+    font-size: 40px;
+    margin: 30px;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 0.7s;
+
+}
+#Recipe h2{
+    text-align: center;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 0.7s;
+    margin-bottom: 3px;
+}
+#recipes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(359px,auto));
+}
+.food:hover{
+    transform: translateY(-10px) !important;
+}
+.food{
+    padding: 20px;
+    background-color: aqua;
+    height: 250px;
+    margin: 5px;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 0.7s;
+    border: solid 2px black ;
+}
+.food h3{
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 0.7s;
+}
+.food button{
+    padding: 3px;
+    border: solid 1px black;
+    background-color: #fefefe;
+    border-radius: 3px;
+    margin-top: 2px;
+}
+#r1{
+    background: url(choco.jpeg);
+    background-size:cover;
+}
+#r2{
+    background: url(coco.jpeg);
+    background-size:cover;
+}
+#r3{
+    background: url(cafe.jpeg);
+    background-size:cover;
+}
+#r4{
+    background: url(bisq.jpeg);
+    background-size:cover;
+}
+#r5{
+    background: url(ginger.jpeg);
+    background-size:cover;
+}
+#r6{
+    background: url(marie.jpeg);
+    background-size:cover;
+}
+
+
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); /* Black with opacity */
+    padding-top: 60px;
+}
+
+/* Popup content */
+.popup-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#Gallery h1{
+    text-align: center;
+    font-size: 40px;
+    margin: 30px;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 0.7s;
+    margin-top: 25%;
+}
+.gallery{
+    display: flex;
+    gap: 1rem;
+    height: 200px;
+    max-width: 100%;
+    margin-top: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.gallery > div{
+    flex:1;
+    transition:all 1s;
+}
+.gallery > div:nth-child(1){
+    background: url(img.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.gallery > div:nth-child(2){
+    background: url(img1.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.gallery > div:nth-child(3){
+    background: url(img2.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.gallery > div:nth-child(4){
+    background: url(img3.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.gallery > div:hover{
+    flex:6;
+}
+#testimonialCarousel {
+    max-width: 800px;
+    margin: 50px auto;
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #f5f5f5;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-item {
+    display: none;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+blockquote {
+    font-style: italic;
+    color: #555;
+    font-size: 1.2em;
+    margin: 0 auto;
+    max-width: 85%;
+    position: relative;
+    padding: 0 40px;
+}
+
+blockquote:before {
+    content: "“";
+    font-size: 3em;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+    color: #e0a00a;
+}
+
+blockquote:after {
+    content: "”";
+    font-size: 3em;
+    position: absolute;
+    right: 10px;
+    top: -10px;
+    color: #e0a00a;
+}
+
+.client-name {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7); /* Optional for better visibility */
+}
+
+.next {
+    right: 10px;  /* Adjusted to ensure it stays on the right side */
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+#team h1{
+    text-align: center;
+    font-size: 40px;
+    margin: 30px;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 0.7s;
+}
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 50px;
+    margin-bottom: 5%;
+}
+
+.team-member {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #e0a00a;
+}
+
+.team-member p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #777;
+}
+/* Styles for Services and Testimonials Section */
+.services-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto 0 !important;
+    padding: 20px;
+    position: relative;
+    height: 100vh;
+}
+
+.service-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    width: 100%;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.service-section.active {
+    opacity: 1;
+}
+
+h1, h2, h3 {
+    color: #e0a00a;
+    text-shadow: 2px 2px black ;
+
+}
+
+.service-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.case-study {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 800px;
+}
+
+.testimonial {
+    font-style: italic;
+    color: #555;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #e0a00a;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #d18d07;
+}
+
+@keyframes slide {
+    0%, 10% { opacity: 1; }
+    30%, 100% { opacity: 0; }
+}
+
+.services-container .service-section:nth-child(1) {
+    animation: slide 9s infinite;
+}
+.services-container .service-section:nth-child(2) {
+    animation: slide 9s infinite 3s;
+}
+.services-container .service-section:nth-child(3) {
+    animation: slide 9s infinite 6s;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.text-section {
+    flex: 1;
+    padding-right: 20px;
+}
+.video-section {
+    flex: 1;
+}
+#Feedback h1{
+    text-align: center;
+    font-size: 40px;
+    margin: 30px;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 0.7s;
+}
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 3rem;
+    padding-left:30px;
+    margin-top: 130px;
+}
+.contact-text h2{
+    font-size: 30px;
+    line-height: 1;
+    text-align: center;
+}
+.contact-text h4{
+     margin: 15px 0;
+     color: goldenrod;
+     font-size: 20px;
+     font-weight: 600;
+}
+.contact-text p{
+    color: goldenrod;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 2rem;
+
+}
+.contact-list{
+    margin-bottom: 3rem;
+}
+.contact-list li{
+    margin-bottom: 10px;
+    display: block;
+}
+.contact-form form{
+    position: relative;
+}
+.contact-form form input,form textarea{
+    border: none;
+    outline: none;
+    width: 90%;
+    padding: 18px;
+    background-color: rgb(247, 222, 82);
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+
+}
+.contact-form textarea{
+    resize: none;
+    height: 220px;
+}
+.contact-form form .send{
+    display: inline-block;
+    padding: 14px 60px;
+    background:goldenrod;
+    border-radius: 40px;
+    font-size: 18px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0  5px goldenrod,0 0 25px goldenrod;
+}
+.contact-form form .send:hover{
+    background: gold;
+    color: #081b29;
+    box-shadow: 0 0 20px goldenrod;
+}
