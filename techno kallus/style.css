@@ -259,7 +259,7 @@ body{
     height: 100%;
     overflow: auto;
     background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4); /* Black with opacity */
+    background-color: rgba(0,0,0,0.4); 
     padding-top: 60px;
 }
 
@@ -404,11 +404,11 @@ blockquote:after {
     border-radius: 0 3px 3px 0;
     user-select: none;
     transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.7); /* Optional for better visibility */
+    background-color: rgba(255, 255, 255, 0.7); 
 }
 
 .next {
-    right: 10px;  /* Adjusted to ensure it stays on the right side */
+    right: 10px; 
     border-radius: 3px 0 0 3px;
 }
 
@@ -462,7 +462,7 @@ blockquote:after {
     line-height: 1.5;
     color: #777;
 }
-/* Styles for Services and Testimonials Section */
+
 .services-container {
     display: flex;
     flex-direction: column;
